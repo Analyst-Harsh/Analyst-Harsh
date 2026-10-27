@@ -65,7 +65,7 @@ Measured: MRR **0.617 → 0.703 → 0.796** (dense → hybrid → reranked). Mea
 | [Voice→voice, as heard](https://github.com/Analyst-Harsh/Fryday/blob/main/docs/EXPERIMENTS.md) | ~2.8 s | Fryday, recorded real-mic session, n=3 (2.3–3.3 s) |
 | [End-of-turn silence](https://github.com/Analyst-Harsh/Fryday/blob/main/docs/EXPERIMENTS.md) | 500 ms | Fryday, Silero VAD min silence |
 | [Hybrid search recall gain](https://github.com/Analyst-Harsh/DocMind/blob/master/backend/EXPERIMENTS.md) | +7.5 pp | DocMind, Recall@5 0.850 → 0.925, 15-query golden set |
-| [Reranking MRR](https://github.com/Analyst-Harsh/DocMind/blob/master/backend/EXPERIMENTS.md) | 0.703 → 0.796 | DocMind, cross-encoder, MRR@5 |
+| [Reranking MRR](https://github.com/Analyst-Harsh/DocMind/blob/master/backend/EXPERIMENTS.md) | 0.703&nbsp;→&nbsp;0.796 | DocMind, cross-encoder, MRR@5 |
 | [Semantic cache cost](https://github.com/Analyst-Harsh/DocMind/blob/master/backend/EXPERIMENTS.md) | −22.3% | DocMind, avg cost per query, 0.75 threshold |
 | [LLM-judge disagreement](https://github.com/Analyst-Harsh/DocMind/blob/master/backend/EXPERIMENTS.md) | 30.4% | DocMind, 34 of 112 RAGAS scores re-judged |
 | [Challengers promoted](https://github.com/Analyst-Harsh/signal-score/blob/main/EXPERIMENTS.md) | 0 of 4 | signal-score promotion gate (exp 2 was a sweep, not gated) |
