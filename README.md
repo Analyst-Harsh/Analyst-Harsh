@@ -1,7 +1,9 @@
-<a href="https://github.com/Analyst-Harsh"><picture>
+<a href="https://github.com/Analyst-Harsh">
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
   <img src="assets/banner-light.svg" width="100%" alt="HG-01 datasheet: Harshit Goyal, full-stack AI developer, India. Speech envelope of Fryday's voice; voice-to-voice latency ~2.8 s as heard.">
-</picture></a>
+</picture>
+</a>
 
 ## 1 · General description <sub>who I am</sub>
 
@@ -15,28 +17,34 @@
 
 ## 2 · Selected work <sub>typical performance</sub>
 
-<a href="https://github.com/Analyst-Harsh/Fryday"><picture>
+<a href="https://github.com/Analyst-Harsh/Fryday">
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/fig1-fryday-dark.svg">
   <img src="assets/fig1-fryday-light.svg" width="100%" alt="Fig. 1, Fryday latency waterfall in real time: VAD 0.50 s, ASR 0.54 s, reply to first audio 1.15 s (first token 0.23 s), server median 2.14 s; ~2.8 s voice-to-voice as heard (n=3, 2.3–3.3 s, separate real-mic session).">
-</picture></a>
+</picture>
+</a>
 
 **Fig. 1 · [Fryday](https://github.com/Analyst-Harsh/Fryday)** — hands-free Hindi voice assistant, fully on a Mac, that you can interrupt mid-reply.<br>
 Built: browser mic → Silero VAD → Whisper → Qwen3-4B → Kokoro TTS on Apple MLX, over a WebSocket; barge-in trims the reply in history to the words you actually heard.<br>
 Measured: **~2.8 s voice→voice as heard** (n=3, 2.3–3.3 s). Server stage medians: VAD 0.50 · ASR 0.54 · reply→first audio 1.15 (first token 0.23); end-to-end median **2.14 s**.
 
-<a href="https://github.com/Analyst-Harsh/Triage-Bot"><picture>
+<a href="https://github.com/Analyst-Harsh/Triage-Bot">
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/fig2-triage-dark.svg">
   <img src="assets/fig2-triage-light.svg" width="100%" alt="Fig. 2, Triage-Bot pipeline: plan, research, draft, risk check, then auto-post or wait in a human approval queue. 6 OWASP LLM Top 10 prompt-injection regression cases.">
-</picture></a>
+</picture>
+</a>
 
 **Fig. 2 · [Triage-Bot](https://github.com/Analyst-Harsh/Triage-Bot)** — LangGraph agent that triages GitHub issues · [live site ↗](https://analyst-harsh.github.io/Triage-Bot/)<br>
 Built: Planner → Researcher → Drafter → Risk check → auto-post or approval queue, with Postgres checkpoints, pgvector episodic memory, a FastAPI operator API and a Next.js dashboard.<br>
 Measured: cross-provider trajectory evals (an Anthropic judge grades an OpenAI-run agent); **6 OWASP LLM Top 10 prompt-injection cases** kept as regression tests.
 
-<a href="https://github.com/Analyst-Harsh/DocMind"><picture>
+<a href="https://github.com/Analyst-Harsh/DocMind">
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/fig3-docmind-dark.svg">
   <img src="assets/fig3-docmind-light.svg" width="100%" alt="Fig. 3, DocMind MRR rising from 0.617 (dense) to 0.703 (hybrid) to 0.796 (reranked); marker where measurement found Graph RAG entity expansion was dead code.">
-</picture></a>
+</picture>
+</a>
 
 **Fig. 3 · [DocMind](https://github.com/Analyst-Harsh/DocMind)** — eval-driven RAG with citations.<br>
 Built: Next.js chat + FastAPI + Qdrant. Hybrid search, cross-encoder reranking, semantic caching, agentic and graph retrieval, each adopted or rejected by measurement.<br>
