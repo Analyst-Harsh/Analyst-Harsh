@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 220" width="840" height="220" role="img" aria-label="Fig. 3, DocMind MRR rising from 0.617 (dense) to 0.703 (hybrid) to 0.796 (reranked); marker where measurement found Graph RAG entity expansion was dead code.">
+<style>
+/*FONTS*/
+.d{font-family:'Big Shoulders Display',Impact,'Arial Narrow',sans-serif;font-weight:800}
+.m{font-family:'IBM Plex Mono',Menlo,ui-monospace,monospace}
+.ink{fill:var(--ink)} .mut{fill:var(--mut)} .acc{fill:var(--acc)} .bad{fill:var(--bad)}
+.rl{stroke:var(--rule);fill:none}
+/* the line draws in once, then stays */
+.ln{stroke-dasharray:580;animation:ln 1.8s ease-out 1 both}
+.ar{animation:ar 1.8s ease-out 1 both}
+@keyframes ln{from{stroke-dashoffset:580}to{stroke-dashoffset:0}}
+@keyframes ar{0%,60%{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.ln,.ar{animation:none}}
+</style>
+<defs>
+<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="var(--h1)"/><stop offset=".5" stop-color="var(--h2)"/><stop offset="1" stop-color="var(--h3)"/></linearGradient>
+<linearGradient id="gs" gradientUnits="userSpaceOnUse" x1="300" x2="800"><stop offset="0" stop-color="var(--h1)"/><stop offset=".5" stop-color="var(--h2)"/><stop offset="1" stop-color="var(--h3)"/></linearGradient>
+</defs>
+<rect x=".5" y=".5" width="839" height="219" rx="12" fill="var(--card)" stroke="var(--rule)"/>
+<text class="m acc" x="24" y="30" font-size="11" letter-spacing="1.5" font-weight="500">FIG 3 · RETRIEVAL QUALITY, MRR@5</text>
+<text class="m mut" x="816" y="30" font-size="11" letter-spacing="1.5" text-anchor="end">HG-01-R</text>
+<line class="rl" x1="0" y1="44" x2="840" y2="44"/>
+<text class="d ink" x="22" y="102" font-size="44" letter-spacing=".5">DOCMIND</text>
+<text class="d" x="22" y="156" font-size="40" fill="url(#g)">0.796</text>
+<text class="m mut" x="24" y="180" font-size="10" letter-spacing="1">MRR@5 · RERANKED</text>
+<text class="m mut" x="24" y="196" font-size="10" letter-spacing="1">FROM 0.617 DENSE</text>
+<line class="rl" x1="262.5" y1="62" x2="262.5" y2="200"/>
+<!-- y = 196 − (MRR − 0.55)/0.30 · 132 -->
+<line class="rl" x1="300" y1="196.5" x2="800" y2="196.5"/>
+<path class="ar" d="M300 166.5H460V128.7H620V87.8H800V196H300Z" fill="var(--h3)" fill-opacity=".07"/>
+<path class="ln" d="M300 166.5H460V128.7H620V87.8H800" fill="none" stroke="url(#gs)" stroke-width="3"/>
+<g class="m" font-size="10" letter-spacing=".5">
+<text class="mut" x="306" y="158">0.617 DENSE</text>
+<text class="mut" x="466" y="120">0.703 HYBRID</text>
+<text class="acc" x="626" y="79" font-weight="500">0.796 RERANKED</text>
+</g>
+<line x1="770.5" y1="92" x2="770.5" y2="120" stroke="var(--bad)" stroke-width="1.5"/>
+<circle cx="770.5" cy="87.8" r="3.5" fill="var(--bad)"/>
+<text class="m bad" x="764" y="134" font-size="9" letter-spacing="1" text-anchor="end">BUG FOUND · GRAPH RAG</text>
+</svg>

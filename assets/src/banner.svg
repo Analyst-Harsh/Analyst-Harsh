@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="HG-01 datasheet: Harshit Goyal, full-stack AI developer, India. Speech envelope of Fryday's voice; voice-to-voice latency ~2.8 s as heard.">
+<style>
+/*FONTS*/
+/*SERIF*/
+.d{font-family:'Big Shoulders Display',Impact,'Arial Narrow',sans-serif;font-weight:800}
+.m{font-family:'IBM Plex Mono',Menlo,ui-monospace,monospace}
+.s{font-family:'Instrument Serif',Georgia,serif;font-style:italic}
+.ink{fill:var(--ink)} .mut{fill:var(--mut)} .acc{fill:var(--acc)}
+.rl{stroke:var(--rule);fill:none}
+.b0{fill:var(--rule)} .b1{fill:var(--h1)} .b2{fill:var(--h2)} .b3{fill:var(--h3)}
+/* playhead crosses the 2.8 s window in 2.8 s; at rest it sits at the end */
+.ph{animation:ph 2.8s linear infinite}
+@keyframes ph{from{transform:translateX(-492px)}to{transform:translateX(0)}}
+@media (prefers-reduced-motion:reduce){.ph{animation:none}}
+</style>
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="var(--h1)"/><stop offset=".5" stop-color="var(--h2)"/><stop offset="1" stop-color="var(--h3)"/></linearGradient></defs>
+<rect x=".5" y=".5" width="1199" height="299" rx="12" fill="var(--card)" stroke="var(--rule)"/>
+<text class="m acc" x="28" y="33" font-size="14" letter-spacing="2" font-weight="500">HG-01</text>
+<text class="m mut" x="1172" y="33" font-size="12" letter-spacing="1" text-anchor="end">FULL-STACK AI DEVELOPER · INDIA · REV 2026.10</text>
+<line class="rl" x1="0" y1="50" x2="1200" y2="50"/>
+<text class="d ink" x="24" y="146" font-size="96" letter-spacing="1">HARSHIT</text>
+<text class="d" x="24" y="234" font-size="96" letter-spacing="1" fill="url(#g)">GOYAL</text>
+<text class="s mut" x="27" y="274" font-size="22">I build AI systems end to end, and I measure every one of them.</text>
+<path d="M640 82v-10h10M1162 72h10v10M1172 262v10h-10M650 272h-10v-10" fill="none" stroke="var(--acc)" stroke-width="1.5"/>
+<text class="m mut" x="656" y="94" font-size="10" letter-spacing="1">FIG 0 · SPEECH ENVELOPE · FRYDAY'S VOICE</text>
+<text class="d" x="1156" y="100" font-size="28" text-anchor="end" fill="url(#g)">2.8 s</text>
+<text class="m mut" x="1156" y="114" font-size="9" letter-spacing="1" text-anchor="end">HEARD · TYP</text>
+<line class="rl" x1="660" y1="257.5" x2="1152" y2="257.5"/>
+<!-- 44 RMS bins over a 2.8 s window of Fryday/data/audio/v3_voice_D.wav (Kokoro hf_alpha), height = level × 1.3 -->
+<rect class="b3" x="662.0" y="141.3" width="7" height="115.7" rx="1"/>
+<rect class="b3" x="673.2" y="127.0" width="7" height="130.0" rx="1"/>
+<rect class="b3" x="684.4" y="130.9" width="7" height="126.1" rx="1"/>
+<rect class="b3" x="695.5" y="137.4" width="7" height="119.6" rx="1"/>
+<rect class="b2" x="706.7" y="185.5" width="7" height="71.5" rx="1"/>
+<rect class="b1" x="717.9" y="214.1" width="7" height="42.9" rx="1"/>
+<rect class="b0" x="729.1" y="255.0" width="7" height="2.0" rx="1"/>
+<rect class="b2" x="740.3" y="181.6" width="7" height="75.4" rx="1"/>
+<rect class="b2" x="751.4" y="180.3" width="7" height="76.7" rx="1"/>
+<rect class="b1" x="762.6" y="220.6" width="7" height="36.4" rx="1"/>
+<rect class="b2" x="773.8" y="171.2" width="7" height="85.8" rx="1"/>
+<rect class="b3" x="785.0" y="164.7" width="7" height="92.3" rx="1"/>
+<rect class="b2" x="796.2" y="186.8" width="7" height="70.2" rx="1"/>
+<rect class="b0" x="807.3" y="254.4" width="7" height="2.6" rx="1"/>
+<rect class="b1" x="818.5" y="240.1" width="7" height="16.9" rx="1"/>
+<rect class="b2" x="829.7" y="194.6" width="7" height="62.4" rx="1"/>
+<rect class="b2" x="840.9" y="184.2" width="7" height="72.8" rx="1"/>
+<rect class="b2" x="852.1" y="177.7" width="7" height="79.3" rx="1"/>
+<rect class="b1" x="863.2" y="220.6" width="7" height="36.4" rx="1"/>
+<rect class="b3" x="874.4" y="164.7" width="7" height="92.3" rx="1"/>
+<rect class="b3" x="885.6" y="159.5" width="7" height="97.5" rx="1"/>
+<rect class="b1" x="896.8" y="233.6" width="7" height="23.4" rx="1"/>
+<rect class="b2" x="908.0" y="182.9" width="7" height="74.1" rx="1"/>
+<rect class="b1" x="919.1" y="218.0" width="7" height="39.0" rx="1"/>
+<rect class="b0" x="930.3" y="246.6" width="7" height="10.4" rx="1"/>
+<rect class="b0" x="941.5" y="255.0" width="7" height="2.0" rx="1"/>
+<rect class="b0" x="952.7" y="255.0" width="7" height="2.0" rx="1"/>
+<rect class="b0" x="963.9" y="255.0" width="7" height="2.0" rx="1"/>
+<rect class="b1" x="975.0" y="238.8" width="7" height="18.2" rx="1"/>
+<rect class="b3" x="986.2" y="163.4" width="7" height="93.6" rx="1"/>
+<rect class="b3" x="997.4" y="159.5" width="7" height="97.5" rx="1"/>
+<rect class="b0" x="1008.6" y="249.2" width="7" height="7.8" rx="1"/>
+<rect class="b0" x="1019.8" y="255.0" width="7" height="2.0" rx="1"/>
+<rect class="b1" x="1030.9" y="215.4" width="7" height="41.6" rx="1"/>
+<rect class="b3" x="1042.1" y="151.7" width="7" height="105.3" rx="1"/>
+<rect class="b3" x="1053.3" y="151.7" width="7" height="105.3" rx="1"/>
+<rect class="b2" x="1064.5" y="182.9" width="7" height="74.1" rx="1"/>
+<rect class="b2" x="1075.7" y="184.2" width="7" height="72.8" rx="1"/>
+<rect class="b2" x="1086.8" y="177.7" width="7" height="79.3" rx="1"/>
+<rect class="b0" x="1098.0" y="250.5" width="7" height="6.5" rx="1"/>
+<rect class="b0" x="1109.2" y="253.1" width="7" height="3.9" rx="1"/>
+<rect class="b2" x="1120.4" y="173.8" width="7" height="83.2" rx="1"/>
+<rect class="b2" x="1131.6" y="193.3" width="7" height="63.7" rx="1"/>
+<rect class="b2" x="1142.7" y="198.5" width="7" height="58.5" rx="1"/>
+<line class="ph" x1="1152" y1="122" x2="1152" y2="262" stroke="var(--acc)" stroke-width="1.5"/>
+</svg>

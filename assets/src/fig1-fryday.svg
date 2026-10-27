@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 220" width="840" height="220" role="img" aria-label="Fig. 1, Fryday latency waterfall in real time: VAD 0.50 s, ASR 0.54 s, reply to first audio 1.15 s (first token 0.23 s), server median 2.14 s; ~2.8 s voice-to-voice as heard (n=3, 2.3–3.3 s, separate real-mic session).">
+<style>
+/*FONTS*/
+.d{font-family:'Big Shoulders Display',Impact,'Arial Narrow',sans-serif;font-weight:800}
+.m{font-family:'IBM Plex Mono',Menlo,ui-monospace,monospace}
+.ink{fill:var(--ink)} .mut{fill:var(--mut)} .acc{fill:var(--acc)}
+.rl{stroke:var(--rule);fill:none}
+/* 8 s cycle; each stage grows over its real duration (x = 290 + 170·t) */
+.wf{animation:8s linear infinite}
+.vad{transform-origin:290px 0;animation-name:vad}
+.asr{transform-origin:375px 0;animation-name:asr}
+.rep{transform-origin:466.8px 0;animation-name:rep}
+.hrd{transform-origin:290px 0;animation-name:hrd}
+.tok{animation-name:tok} .srv{animation-name:srv}
+@keyframes vad{0%{transform:scaleX(0)}6.25%,100%{transform:scaleX(1)}}
+@keyframes asr{0%,6.25%{transform:scaleX(0)}13%,100%{transform:scaleX(1)}}
+@keyframes rep{0%,13%{transform:scaleX(0)}27.4%,100%{transform:scaleX(1)}}
+@keyframes hrd{0%{transform:scaleX(0)}35%,100%{transform:scaleX(1)}}
+@keyframes tok{0%,15.8%{opacity:0}16%,100%{opacity:1}}
+@keyframes srv{0%,26.6%{opacity:0}26.8%,100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.wf{animation:none}}
+</style>
+<defs>
+<linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="var(--h1)"/><stop offset=".5" stop-color="var(--h2)"/><stop offset="1" stop-color="var(--h3)"/></linearGradient>
+<pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="var(--acc)" stroke-width="2" stroke-opacity=".55"/></pattern>
+</defs>
+<rect x=".5" y=".5" width="839" height="219" rx="12" fill="var(--card)" stroke="var(--rule)"/>
+<text class="m acc" x="24" y="30" font-size="11" letter-spacing="1.5" font-weight="500">FIG 1 · VOICE → VOICE, REAL TIME</text>
+<text class="m mut" x="816" y="30" font-size="11" letter-spacing="1.5" text-anchor="end">HG-01-V</text>
+<line class="rl" x1="0" y1="44" x2="840" y2="44"/>
+<text class="d ink" x="22" y="102" font-size="44" letter-spacing=".5">FRYDAY</text>
+<text class="d" x="22" y="156" font-size="40" fill="url(#g)">~2.8 s</text>
+<text class="m mut" x="24" y="180" font-size="10" letter-spacing="1">VOICE→VOICE · AS HEARD</text>
+<text class="m mut" x="24" y="196" font-size="10" letter-spacing="1">n=3 · 2.3–3.3 s</text>
+<line class="rl" x1="262.5" y1="62" x2="262.5" y2="200"/>
+<rect class="wf vad" x="290" y="70" width="85" height="14" rx="2" fill="var(--h1)"/>
+<text class="m mut" x="383" y="81" font-size="10">VAD 0.50</text>
+<rect class="wf asr" x="375" y="98" width="91.8" height="14" rx="2" fill="var(--h2)"/>
+<text class="m mut" x="474" y="109" font-size="10">ASR 0.54</text>
+<rect class="wf rep" x="466.8" y="126" width="195.5" height="14" rx="2" fill="var(--h3)"/>
+<g class="wf tok"><line x1="505.9" y1="122" x2="505.9" y2="144" stroke="var(--ink)" stroke-width="1.5"/>
+<text class="m mut" x="505.9" y="156" font-size="9" text-anchor="middle">first token 0.23</text></g>
+<text class="m mut" x="670" y="137" font-size="10">reply→first audio 1.15</text>
+<g class="wf srv"><line x1="653.8" y1="62" x2="653.8" y2="146" stroke="var(--ink)" stroke-width="1" stroke-dasharray="2 3"/>
+<text class="m ink" x="648" y="64" font-size="9" letter-spacing=".5" text-anchor="end">SERVER MEDIAN 2.14 s</text></g>
+<text class="m acc" x="290" y="174" font-size="9" letter-spacing=".5">HEARD ~2.8 s · SEPARATE REAL-MIC SESSION, n=3</text>
+<rect class="wf hrd" x="290" y="180" width="476" height="14" rx="2" fill="url(#hatch)" stroke="var(--acc)" stroke-width="1"/>
+</svg>
