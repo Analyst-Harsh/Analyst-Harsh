@@ -10,7 +10,7 @@
 **Full-stack AI developer: agents, RAG and on-device voice, from the model loop to the UI. I measure everything I ship.**
 
 **Open to:** full-stack developer and forward-deployed engineer (FDE) roles · India or remote<br>
-[LinkedIn](https://www.linkedin.com/in/harshit-goyal-ai/) · [harshit.1188@gmail.com](mailto:harshit.1188@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/harshit-goyal-ai/) · [harshit.1188@gmail.com](mailto:harshit.1188@gmail.com) · [Résumé (PDF)](resume.pdf)
 
 <sub>**Stack** Python · TypeScript · React · Next.js · FastAPI · LangGraph · Qdrant · MLX · PostgreSQL/pgvector<br>
 **Currently building** Fryday v6, LLM hosting with vLLM and Triton</sub>
@@ -75,6 +75,6 @@ Measured: MRR **0.617 → 0.703 → 0.796** (dense → hybrid → reranked). Mea
 
 ## 5 · Ordering information <sub>contact</sub>
 
-**[LinkedIn](https://www.linkedin.com/in/harshit-goyal-ai/) · [harshit.1188@gmail.com](mailto:harshit.1188@gmail.com)**
+**[LinkedIn](https://www.linkedin.com/in/harshit-goyal-ai/) · [harshit.1188@gmail.com](mailto:harshit.1188@gmail.com) · [Résumé (PDF)](resume.pdf)**
 
 <sub>HG-01 · Rev 2026.10 · All values measured; sources linked above.</sub>
